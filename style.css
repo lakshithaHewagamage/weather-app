@@ -71,7 +71,7 @@ h1.temp {
 }
 .weather.loading:after{
     visibility: visible;
-    content: "Waiting for the CITY name...";
+    content: "Loading... CITY name...";
     color: white;
     position: absolute;
     top: 0;
