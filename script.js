@@ -2,7 +2,7 @@
      "apikey": "e65ed65979e863c6b8812c2734e8fba6",
      fetchweather: function(city){
          fetch(
-             "http://api.openweathermap.org/data/2.5/weather?q="
+             "https://api.openweathermap.org/data/2.5/weather?q="
              + city 
              +"&units=metric&appid=e65ed65979e863c6b8812c2734e8fba6" 
              
@@ -17,7 +17,7 @@
          const{speed }=data.wind;
         document.querySelector(".city").innerText = "weather in " + name;
         document.querySelector(".icon").src = 
-        "http://openweathermap.org/img/wn/" + icon + ".png" ;
+        "https://openweathermap.org/img/wn/" + icon + ".png" ;
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp +"°C";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
