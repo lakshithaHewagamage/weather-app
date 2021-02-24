@@ -19,16 +19,7 @@
            document.querySelector(".city").innerText = "weather in " + name;
            document.querySelector(".icon").src = 
            "https://openweathermap.org/img/wn/" + icon + ".png" ;
-           if(temp<10){
-            document.querySelector(".description").innerText = "cold";
-           }
-           else if(10<temp<35){
-            document.querySelector(".description").innerText = "moderate";
-           }
-           else if(temp>35){
-            document.querySelector(".description").innerText = "hot";
-           }
-           
+            document.querySelector(".description").innerText = description;
            document.querySelector(".temp").innerText = temp +"°C";
            document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
            document.querySelector(".wind").innerText = "Wind speed: " + speed + " km/h";
